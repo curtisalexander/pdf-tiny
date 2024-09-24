@@ -3,7 +3,7 @@
 
 ## Usage
 ```shell
-pdf-tiny input_file.pdf
+pdf-tiny --path input_file.pdf
 ```
 
 Writes output file to same directory as input file, appending `_tiny` to the filename.
