@@ -27,8 +27,9 @@ fn main() -> anyhow::Result<()> {
     let input_file_stem = input_file.file_stem().unwrap().to_str().unwrap();
     let output_file = input_file.parent().unwrap().join(format!("{input_file_stem}_tiny.pdf"));
 
-    println!("Shrinking: {:?}", input_file.blue());
-    println!("Tiny version will be: {:?}", output_file.green());
+    println!("Shrinking: {}", input_file.display().blue());
+    println!("Tiny version will be: {}", output_file.display().green());
+    println!("\n{} the command...\n", String::from("Running").purple());
 
     let sh = Shell::new()?;
     cmd!(sh, "{gs_executable} -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile={output_file} {input_file}").run()?;

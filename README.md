@@ -23,7 +23,7 @@ This is a :crab: Rust wrapper around a set of options to run :ghost: GhostScript
 
 The file path to GhostScript is assumed to start with `C:\Program Files\gs` and is [glob](https://docs.rs/glob/latest/glob/) matched to ignore the version number in order to identify the `gswin64c.exe` executable.  Then [xshell](https://docs.rs/xshell/latest/xshell/) is utilized to execute the program.
 
-The GhostScript [incantation](https://github.com/curtisalexander/pdf-tiny/blob/main/src/main.rs#L34) is the following.  Note that the input file is taken from the command line and the output file has `_tiny` appended to the filename.
+The GhostScript [incantation](https://github.com/curtisalexander/pdf-tiny/blob/main/src/main.rs#L35) is the following.  Note that the input file is taken from the command line and the output file has `_tiny` appended to the filename.
 ```shell
 gswin64c.exe -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output_file.pdf input_file.pdf
 ```
