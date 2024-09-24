@@ -6,7 +6,7 @@
 pdf-tiny --path input_file.pdf
 ```
 
-The output file is written to same directory as the input file, appending `_tiny` to the filename.
+The output file (the smaller version of the PDF) is written to the same directory as the input file, appending `_tiny` to the filename.
 
 ## Requirements
 Requires [GhostScript](https://ghostscript.com/releases/gsdnld.html) to be installed.  Further requires that GhostScript is installed within `C:\Program Files` using the default installation options.  [Adjust](https://github.com/curtisalexander/pdf-tiny/blob/main/src/main.rs#L20) as needed.
