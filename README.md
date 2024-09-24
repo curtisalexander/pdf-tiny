@@ -29,7 +29,7 @@ gswin64c.exe -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -d
 ```
 
 ## Compatibility
-Only works on Windows due to [hard coding](https://github.com/curtisalexander/pdf-tiny/blob/main/src/main.rs#L20) the filepath for GhostScript.  Could very easily be adapted for other operating systems.
+`pdf-tiny` only works on Windows due to [hard coding](https://github.com/curtisalexander/pdf-tiny/blob/main/src/main.rs#L20) the filepath for GhostScript.  It could easily be adapted for other operating systems.
 
 ## Why Build This?
 - Opportunity to experiment with `xtask`
