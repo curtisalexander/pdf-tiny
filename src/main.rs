@@ -32,7 +32,7 @@ fn main() -> anyhow::Result<()> {
     println!("\n{} the command...\n", String::from("Running").purple());
 
     let sh = Shell::new()?;
-    cmd!(sh, "{gs_executable} -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile={output_file} {input_file}").run()?;
+    cmd!(sh, "{gs_executable} -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile={output_file} {input_file}").run()?;
 
     Ok(())
 }

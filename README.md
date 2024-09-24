@@ -25,7 +25,7 @@ The file path to GhostScript is assumed to start with `C:\Program Files\gs` and 
 
 The GhostScript [incantation](https://github.com/curtisalexander/pdf-tiny/blob/main/src/main.rs#L35) is the following.  Note that the input file is taken from the command line and the output file has `_tiny` appended to the filename.
 ```shell
-gswin64c.exe -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output_file.pdf input_file.pdf
+gswin64c.exe -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output_file.pdf input_file.pdf
 ```
 
 ## Compatibility
