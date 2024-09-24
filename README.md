@@ -19,7 +19,7 @@ cargo install --git https://github.com/curtisalexander/pdf-tiny
 ```
 
 ## How Is This Built?
-This is a :crab: Rust wrapper around a set of options to run GhostScript from the command line.
+This is a :crab: Rust wrapper around a set of options to run :ghost: GhostScript from the command line.
 
 The file path to GhostScript is assumed to start with `C:\Program Files\gs` and is [glob](https://docs.rs/glob/latest/glob/) matched to ignore the version number in order to identify the `gswin64c.exe` executable.  Then [xshell](https://docs.rs/xshell/latest/xshell/) is utilized to execute the program.
 
